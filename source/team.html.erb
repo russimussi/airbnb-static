@@ -1,0 +1,12 @@
+<div class="padded text-center">
+  <h1>Team</h1>
+  <ul class="list-inline padded">
+    <% ["raphael", "lucas"].each do |member| %>
+      <li>
+        <%= image_tag "#{member}.jpg", class: "img-rounded avatar-large" %>
+        <h2><%= member.capitalize %></h2>
+      </li>
+    <% end %>
+  </ul>
+  <h3><%= link_to "lucasmussi@gmail.com", "mailto:lucasmussi@gmail.com" %></h3>
+</div>
